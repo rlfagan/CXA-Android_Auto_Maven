@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4178BE</color>
+    <color name="colorPrimaryDark">#4178BE</color>
+    <color name="tabButtonsBlue">#5596e6</color>
+    <color name="buttonsColor">#7cc7ff</color>
+    <color name="colorAccent">#7cc7ff</color>
+    <color name="CXA_pink">#7cc7ff</color>
+
+</resources>

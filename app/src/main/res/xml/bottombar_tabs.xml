@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="Home"/>
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/ic_search"
+        title="Search"/>
+    <tab
+        id="@+id/tab_shopping"
+        icon="@drawable/ic_shopping"
+        title="Cart"/>
+    <tab
+        id="@+id/tab_more"
+        icon="@drawable/ic_more_2"
+        title="More"/>
+</tabs>

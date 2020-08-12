@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/nameOfProduct"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:id="@+id/ratingBar"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:progressTint="#fecb6e"
+            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_reading_tablet"
+            android:id="@+id/productImage" />
+
+        <TextView
+            android:text="Price: $375.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceOfProduct"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:text="In Stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <Button
+            android:text="Add to Cart"
+            android:background="@color/buttonsColor"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddCart" />
+
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:id="@+id/textView3"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:id="@+id/descriptionOfProduct"
+            android:layout_marginBottom="80dp"/>
+
+    </LinearLayout>
+</ScrollView>

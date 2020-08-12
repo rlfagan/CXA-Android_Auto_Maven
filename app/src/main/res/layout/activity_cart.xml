@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<TextView android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" android:padding="10dp"-->
+        <!--android:text="some_text" android:textSize="20sp" />-->
+
+    <!--<EditText android:id="@+id/myFilter" android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" android:ems="10"-->
+        <!--android:hint="Search CXA">-->
+        <!--<requestFocus />-->
+    <!--</EditText>-->
+    <ListView
+        android:id="@+id/acquiredProductsList"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="118dp"
+        android:background="#ffffff"
+        android:divider="@color/colorPrimary"
+        android:radius="10dp"/>
+
+    <Button
+        android:text="Checkout"
+        android:layout_marginTop="117dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonsColor"
+        android:textColor="#fff"
+        android:id="@+id/checkoutButton" />
+
+    <com.dexafree.materialList.view.MaterialListView
+        android:layout_marginTop="162dp"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:id="@+id/material_listview"
+        android:scrollbars="vertical"/>
+    <!--<Button-->
+        <!--android:id="@+id/buttonExample"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentTop="true"/>-->
+
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:bb_activeTabColor="@color/tabButtonsBlue"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs" />
+
+</RelativeLayout>

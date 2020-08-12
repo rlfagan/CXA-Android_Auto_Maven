@@ -1,0 +1,8 @@
+include ':app', 'cardscore'
+
+////include ':eoCore'
+////project(':eoCore').projectDir = new File('../../AndroidSrc/AndroidStudioEOCore/eoCore')
+//include ':tealeafMod'
+//project(':tealeafMod').projectDir = new File('../../AndroidSrc/AndroidStudioTealeafMod/tealeafMod')
+//include ':teaCuts'
+//project(':teaCuts').projectDir = new File('../../AndroidSrc/AndroidStudioTeaCuts/teaCuts')
