@@ -28,14 +28,14 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.browser:browser:1.2.0'
+//    implementation 'androidx.browser:browser:1.2.0'
 
 // Public github maven repo
     implementation files('libs/opencsv-2.3.jar')
     implementation project(':cardscore')
     implementation 'com.github.dexafree:materiallist:2.4.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
     implementation 'com.roughike:bottom-bar:2.3.1'
     implementation 'com.google.android.gms:play-services-ads:16.0.0'
 
