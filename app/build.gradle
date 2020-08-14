@@ -28,47 +28,26 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.browser:browser:1.2.0'
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
-//        implementation files('libs/teacuts.jar')
-//        implementation files('libs/tealeafmod.jar')
-//        implementation files('libs/eocore.jar')
+//    implementation 'androidx.browser:browser:1.2.0'
 
 // Public github maven repo
-        //implementation 'com.ea:tealeafsha:1.0.8'
-        implementation 'com.ea:eocore:2.0.53'
-        implementation 'com.ea:tealeaf:10.3.90'
-        implementation 'com.ea:teacuts:3.0.1'
-//        implementation project(':eoCore')
-//        implementation project(':tealeafMod')
-//        implementation project(path: ':teaCuts')
-
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-
     implementation files('libs/opencsv-2.3.jar')
     implementation project(':cardscore')
     implementation 'com.github.dexafree:materiallist:2.4.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
     implementation 'com.roughike:bottom-bar:2.3.1'
     implementation 'com.google.android.gms:play-services-ads:16.0.0'
 
 //    implementation 'com.ea:tealeafmd5:1.0.8'
-//    implementation 'com.ea:eocore:2.0.41'
-//    implementation 'com.ea:tealeaf:10.3.76'
-//    implementation 'com.ea:teacuts:3.0.1'
-
-// This is to link the app to source code
-    //implementation project(':eoCore')
-    //implementation project(':tealeafMod')
-    //implementation project(path: ':teaCuts')
+    implementation 'com.ea:eocore:2.0.59'
+    implementation 'com.ea:tealeaf:10.3.94'
+    implementation 'com.ea:teacuts:3.0.4'
 }
 
 // Required for auto instrumentation using Teacuts library
 aspectj {
-    // For release
-    includeAllJars true
+    // For releaseincludeAllJars true
    includeJar 'teacuts'
    includeAspectsFromJar 'teacuts'
 
